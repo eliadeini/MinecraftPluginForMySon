@@ -1,0 +1,19 @@
+# Stored levels are always 1..100000000; these caps only limit physical effects.
+max-selectable-level: 100000000
+allow-enchant-on-any-item: true
+custom-effects-enabled: true
+explosion-block-damage: false
+# Vanilla engine representation is bounded; exact requested values remain in PDC.
+vanilla-engine-level-cap: 255
+scan-radius: 6.0
+max-nearby-entities: 24
+max-blocks: 48
+max-extra-hits: 2
+max-chain-targets: 6
+max-velocity: 2.0
+max-explosion-strength: 3.0
+max-health-bonus: 80.0
+max-damage: 100.0
+period-ticks: 20
+dialog-timeout-seconds: 120
+# All tunable values are clamped to hard implementation limits as a last resort.

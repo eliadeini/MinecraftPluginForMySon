@@ -1,0 +1,723 @@
+# Exact levels are stored in item PDC. scale/cap affect runtime effects only.
+custom:
+  life_steal:
+    english: 'Life Steal'
+    hebrew: 'גניבת חיים'
+    categories: [weapon]
+    description: 'Weapon hits restore a bounded fraction of actual damage.'
+    classification: good
+    enabled: true
+    scale: 0.03
+    cap: 0.5
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  vampire:
+    english: 'Vampire'
+    hebrew: 'ערפד'
+    categories: [weapon]
+    description: 'Healing grows as the target loses health.'
+    classification: good
+    enabled: true
+    scale: 0.05
+    cap: 0.5
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  lightning:
+    english: 'Lightning'
+    hebrew: 'ברק'
+    categories: [weapon]
+    description: 'Visual lightning and attributed bonus damage without block fire.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 15
+    chance: 0.15
+    cooldown-seconds: 3
+    conflicts: []
+  explosive:
+    english: 'Explosive'
+    hebrew: 'פיצוץ'
+    categories: [weapon]
+    description: 'Bounded explosion; block damage is disabled by default.'
+    classification: good
+    enabled: true
+    scale: 0.2
+    cap: 3
+    chance: 0.1
+    cooldown-seconds: 5
+    conflicts: []
+  freeze:
+    english: 'Freeze'
+    hebrew: 'הקפאה'
+    categories: [weapon]
+    description: 'Applies brief slowness to a damaged enemy.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 0.3
+    cooldown-seconds: 1
+    conflicts: []
+  poison:
+    english: 'Poison'
+    hebrew: 'רעל'
+    categories: [weapon]
+    description: 'Applies brief poison to a damaged enemy.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 3
+    chance: 0.2
+    cooldown-seconds: 1
+    conflicts: []
+  wither:
+    english: 'Wither'
+    hebrew: 'ויתר'
+    categories: [weapon]
+    description: 'Applies brief wither to a damaged enemy.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 3
+    chance: 0.2
+    cooldown-seconds: 1
+    conflicts: []
+  critical:
+    english: 'Critical'
+    hebrew: 'קריטיקל'
+    categories: [weapon]
+    description: 'Chance for increased primary attack damage.'
+    classification: good
+    enabled: true
+    scale: 0.1
+    cap: 2
+    chance: 0.2
+    cooldown-seconds: 1
+    conflicts: []
+  double_strike:
+    english: 'Double Strike'
+    hebrew: 'מכה כפולה'
+    categories: [weapon]
+    description: 'Chance for one additional damage instance.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 0.2
+    cooldown-seconds: 1
+    conflicts: []
+  triple_strike:
+    english: 'Triple Strike'
+    hebrew: 'מכה משולשת'
+    categories: [weapon]
+    description: 'Chance for two additional damage instances.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 2
+    chance: 0.1
+    cooldown-seconds: 1
+    conflicts: []
+  executioner:
+    english: 'Executioner'
+    hebrew: 'תליין'
+    categories: [weapon]
+    description: 'Increases damage against enemies below thirty percent health.'
+    classification: good
+    enabled: true
+    scale: 0.1
+    cap: 2
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  giant_slayer:
+    english: 'Giant Slayer'
+    hebrew: 'קוטל ענקים'
+    categories: [weapon]
+    description: 'Increases damage against targets with more than forty maximum health.'
+    classification: good
+    enabled: true
+    scale: 0.1
+    cap: 2
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  magnet:
+    english: 'Magnet'
+    hebrew: 'מגנט'
+    categories: [tool,weapon,armor]
+    description: 'Pulls nearby dropped items and experience toward the player.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 6
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  telekinesis:
+    english: 'Telekinesis'
+    hebrew: 'טליקינזיס'
+    categories: [tool]
+    description: 'Mined drops enter inventory with normal overflow drops.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  vein_miner:
+    english: 'Vein Miner'
+    hebrew: 'חציבת וריד'
+    categories: [tool]
+    description: 'Pickaxes mine matching connected ores with a bounded iterative search.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 48
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  excavator:
+    english: 'Excavator'
+    hebrew: 'חפירה 3 על 3'
+    categories: [tool]
+    description: 'Mines matching blocks in a three by three plane facing the player.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  mega_excavator:
+    english: 'Mega Excavator'
+    hebrew: 'חפירה 5 על 5'
+    categories: [tool]
+    description: 'Mines matching blocks in a five by five plane facing the player.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  tree_feller:
+    english: 'Tree Feller'
+    hebrew: 'כורת עצים'
+    categories: [tool]
+    description: 'Axes break bounded matching connected logs above the mined trunk.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 48
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  auto_smelt:
+    english: 'Auto Smelt'
+    hebrew: 'התכה אוטומטית'
+    categories: [tool]
+    description: 'Converts mined drops using public furnace recipes.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  speed:
+    english: 'Speed'
+    hebrew: 'מהירות'
+    categories: [armor]
+    description: 'Armor grants a bounded movement speed modifier.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 10
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  jump_boost:
+    english: 'Jump Boost'
+    hebrew: 'קפיצה'
+    categories: [armor]
+    description: 'Armor periodically grants a short jump effect.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  health_boost:
+    english: 'Health Boost'
+    hebrew: 'תוספת חיים'
+    categories: [armor]
+    description: 'Armor grants a bounded maximum health modifier.'
+    classification: good
+    enabled: true
+    scale: 2
+    cap: 80
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  regeneration:
+    english: 'Regeneration'
+    hebrew: 'ריפוי'
+    categories: [armor]
+    description: 'Armor periodically grants a short regeneration effect.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 3
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  fire_resistance:
+    english: 'Fire Resistance'
+    hebrew: 'חסינות אש'
+    categories: [armor]
+    description: 'Armor periodically grants a short fire resistance effect.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  night_vision:
+    english: 'Night Vision'
+    hebrew: 'ראיית לילה'
+    categories: [helmet]
+    description: 'An enchanted helmet grants night vision.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  water_breathing:
+    english: 'Water Breathing'
+    hebrew: 'נשימת מים'
+    categories: [helmet]
+    description: 'An enchanted helmet grants water breathing.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  haste:
+    english: 'Haste'
+    hebrew: 'הייסט'
+    categories: [armor]
+    description: 'Armor grants bounded haste.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  flight:
+    english: 'Flight'
+    hebrew: 'תעופה'
+    categories: [armor]
+    description: 'Armor enables flight while preserving the earlier flight permission.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  dash:
+    english: 'Dash'
+    hebrew: 'דאש'
+    categories: [tool,weapon,armor]
+    description: 'Sneak and swap hands for a bounded forward dash.'
+    classification: good
+    enabled: true
+    scale: 0.5
+    cap: 2
+    chance: 1
+    cooldown-seconds: 3
+    conflicts: []
+  shockwave:
+    english: 'Shockwave'
+    hebrew: 'גל הדף'
+    categories: [weapon]
+    description: 'Attacks knock nearby entities outward.'
+    classification: good
+    enabled: true
+    scale: 0.2
+    cap: 2
+    chance: 1
+    cooldown-seconds: 3
+    conflicts: []
+  earthquake:
+    english: 'Earthquake'
+    hebrew: 'רעידת אדמה'
+    categories: [weapon]
+    description: 'Mace and axe attacks deal bounded nearby damage without terrain destruction.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 12
+    chance: 1
+    cooldown-seconds: 5
+    conflicts: []
+  chain_lightning:
+    english: 'Chain Lightning'
+    hebrew: 'שרשרת ברקים'
+    categories: [weapon]
+    description: 'Attributed lightning damage jumps to a bounded number of nearby hostile mobs.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 12
+    chance: 0.15
+    cooldown-seconds: 4
+    conflicts: []
+  wildfire:
+    english: 'Wildfire'
+    hebrew: 'אש מתפשטת'
+    categories: [weapon]
+    description: 'Attacks ignite nearby hostile mobs without igniting terrain.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 0.2
+    cooldown-seconds: 3
+    conflicts: []
+  launch:
+    english: 'Launch'
+    hebrew: 'שיגור'
+    categories: [weapon]
+    description: 'Attacks launch enemies upward with bounded velocity.'
+    classification: good
+    enabled: true
+    scale: 0.2
+    cap: 2
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  gravity:
+    english: 'Gravity'
+    hebrew: 'משיכה'
+    categories: [weapon]
+    description: 'Attacks pull nearby entities toward the damaged target.'
+    classification: good
+    enabled: true
+    scale: 0.1
+    cap: 2
+    chance: 1
+    cooldown-seconds: 3
+    conflicts: []
+  blink:
+    english: 'Blink'
+    hebrew: 'בלינק'
+    categories: [tool,weapon,armor]
+    description: 'Sneak and right click air to teleport along a clear ray to a safe floor.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 8
+    chance: 1
+    cooldown-seconds: 5
+    conflicts: []
+  magic_shield:
+    english: 'Magic Shield'
+    hebrew: 'מגן קסום'
+    categories: [armor]
+    description: 'Blocks one incoming attack per cooldown.'
+    classification: good
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 10
+    conflicts: []
+  resurrection:
+    english: 'Resurrection'
+    hebrew: 'החייאה'
+    categories: [armor]
+    description: 'Provides native resurrection without consuming an absent totem; persistent cooldown.'
+    classification: good
+    enabled: true
+    scale: 2
+    cap: 10
+    chance: 1
+    cooldown-seconds: 120
+    conflicts: []
+  overpower:
+    english: 'Overpower'
+    hebrew: 'אוברפאוור'
+    categories: [tool,weapon,armor]
+    description: 'Combines bounded attack damage movement and haste.'
+    classification: good
+    enabled: true
+    scale: 0.1
+    cap: 2
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  curse_of_fragility:
+    english: 'Curse of Fragility'
+    hebrew: 'קללת שבירות'
+    categories: [tool,weapon,armor]
+    description: 'Increases normal item durability loss.'
+    classification: bad
+    enabled: true
+    scale: 0.5
+    cap: 5
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['minecraft:unbreaking']
+  curse_of_decay:
+    english: 'Curse of Decay'
+    hebrew: 'קללת ריקבון'
+    categories: [tool,weapon,armor]
+    description: 'Prevents mending repairs on the affected item.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['minecraft:mending']
+  curse_of_weakness:
+    english: 'Curse of Weakness'
+    hebrew: 'קללת חולשה'
+    categories: [weapon]
+    description: 'Reduces outgoing damage while the cursed weapon is used.'
+    classification: bad
+    enabled: true
+    scale: 0.1
+    cap: 0.95
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: []
+  curse_of_mining_fatigue:
+    english: 'Curse of Mining Fatigue'
+    hebrew: 'קללת כרייה איטית'
+    categories: [armor,tool]
+    description: 'Grants bounded mining fatigue while equipped or holding the cursed tool.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['minecraft:efficiency', 'ultraenchanting:haste']
+  curse_of_vulnerability:
+    english: 'Curse of Vulnerability'
+    hebrew: 'קללת פגיעות'
+    categories: [armor]
+    description: 'Increases incoming damage.'
+    classification: bad
+    enabled: true
+    scale: 0.2
+    cap: 3
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['minecraft:protection']
+  curse_of_heavy_falling:
+    english: 'Curse of Heavy Falling'
+    hebrew: 'קללת נפילה כבדה'
+    categories: [armor]
+    description: 'Increases fall damage.'
+    classification: bad
+    enabled: true
+    scale: 0.5
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['minecraft:feather_falling']
+  curse_of_slowness:
+    english: 'Curse of Slowness'
+    hebrew: 'קללת איטיות'
+    categories: [armor]
+    description: 'Reduces movement speed with a bounded modifier.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:speed']
+  curse_of_heaviness:
+    english: 'Curse of Heaviness'
+    hebrew: 'קללת כבדות'
+    categories: [armor]
+    description: 'Reduces jump strength and applies slowness.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:jump_boost']
+  curse_of_frailty:
+    english: 'Curse of Frailty'
+    hebrew: 'קללת חיים'
+    categories: [armor]
+    description: 'Reduces maximum health while retaining at least one health point.'
+    classification: bad
+    enabled: true
+    scale: 2
+    cap: 18
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:health_boost']
+  curse_of_fire_vulnerability:
+    english: 'Curse of Fire Vulnerability'
+    hebrew: 'רגישות לאש'
+    categories: [armor]
+    description: 'Increases fire lava and hot floor damage.'
+    classification: bad
+    enabled: true
+    scale: 0.5
+    cap: 4
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:fire_resistance']
+  curse_of_blindness:
+    english: 'Curse of Blindness'
+    hebrew: 'קללת עיוורון'
+    categories: [armor]
+    description: 'Periodically applies blindness.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:night_vision']
+  curse_of_drowning:
+    english: 'Curse of Drowning'
+    hebrew: 'קללת טביעה'
+    categories: [armor]
+    description: 'Consumes additional air while underwater.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:water_breathing']
+  curse_of_grounding:
+    english: 'Curse of Grounding'
+    hebrew: 'קללת קרקוע'
+    categories: [armor]
+    description: 'Suppresses plugin flight without removing Creative or Spectator flight.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 1
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:flight']
+  repulsion:
+    english: 'Repulsion'
+    hebrew: 'דחייה'
+    categories: [tool,weapon,armor]
+    description: 'Pushes nearby dropped items and experience away.'
+    classification: bad
+    enabled: true
+    scale: 1
+    cap: 6
+    chance: 1
+    cooldown-seconds: 1
+    conflicts: ['ultraenchanting:magnet', 'ultraenchanting:gravity']
+vanilla:
+  aqua_affinity:
+    hebrew: 'זיקה למים'
+  bane_of_arthropods:
+    hebrew: 'קוטל פרוקי רגליים'
+  binding_curse:
+    hebrew: 'קללת כבילה'
+  blast_protection:
+    hebrew: 'הגנת פיצוץ'
+  breach:
+    hebrew: 'פריצה'
+  channeling:
+    hebrew: 'תיעול'
+  density:
+    hebrew: 'צפיפות'
+  depth_strider:
+    hebrew: 'פסיעה במעמקים'
+  efficiency:
+    hebrew: 'יעילות'
+  feather_falling:
+    hebrew: 'נפילת נוצה'
+  fire_aspect:
+    hebrew: 'היבט אש'
+  fire_protection:
+    hebrew: 'הגנת אש'
+  flame:
+    hebrew: 'להבה'
+  fortune:
+    hebrew: 'מזל'
+  frost_walker:
+    hebrew: 'הליכת כפור'
+  impaling:
+    hebrew: 'שיפוד'
+  infinity:
+    hebrew: 'אינסוף'
+  knockback:
+    hebrew: 'הדיפה'
+  looting:
+    hebrew: 'ביזה'
+  loyalty:
+    hebrew: 'נאמנות'
+  luck_of_the_sea:
+    hebrew: 'מזל הים'
+  lure:
+    hebrew: 'פיתיון'
+  mending:
+    hebrew: 'תיקון'
+  multishot:
+    hebrew: 'ירי מרובה'
+  piercing:
+    hebrew: 'חדירה'
+  power:
+    hebrew: 'עוצמה'
+  projectile_protection:
+    hebrew: 'הגנת קליעים'
+  protection:
+    hebrew: 'הגנה'
+  punch:
+    hebrew: 'אגרוף'
+  quick_charge:
+    hebrew: 'טעינה מהירה'
+  respiration:
+    hebrew: 'נשימה'
+  riptide:
+    hebrew: 'זרם סוחף'
+  sharpness:
+    hebrew: 'חדות'
+  silk_touch:
+    hebrew: 'מגע משי'
+  smite:
+    hebrew: 'מכת אל מתים'
+  soul_speed:
+    hebrew: 'מהירות נשמות'
+  sweeping_edge:
+    hebrew: 'להב סוחף'
+  swift_sneak:
+    hebrew: 'התגנבות מהירה'
+  thorns:
+    hebrew: 'קוצים'
+  unbreaking:
+    hebrew: 'אמבריקינג'
+  vanishing_curse:
+    hebrew: 'קללת היעלמות'
+  wind_burst:
+    hebrew: 'פרץ רוח'

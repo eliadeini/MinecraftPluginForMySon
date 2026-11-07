@@ -1,0 +1,20 @@
+UltraEnchanting source delivery — 2026-11-03
+
+Target: Paper API 26.3.build.230-stable; JDK 25; existing Gradle 9.1+
+Installed software: none
+Server started or modified: none
+External folders searched for tools: none
+
+PASS: Verify-Source.ps1 checks required files, all 53 definition records,
+conflict targets, custom-effect references, Java delimiter balance,
+pinned target versions, and required Hebrew aliases.
+
+NOT RUN: Gradle build, JUnit tests, Paper server integration tests.
+Reason: java, javac, gradle were not found on PATH; the owner explicitly
+requested source-only completion without installing tools.
+
+No compiled JAR is included. Expected path after a successful operator build:
+build/libs/UltraEnchanting-1.0.0.jar
+
+Read README.md for exact build commands, functionality, safety ceilings,
+known limitations and the manual gameplay verification plan.

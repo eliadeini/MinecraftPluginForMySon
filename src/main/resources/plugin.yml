@@ -1,0 +1,16 @@
+name: UltraEnchanting
+version: 1.0.0
+main: dev.ultraenchanting.UltraEnchantingPlugin
+api-version: '26.3'
+description: Ultimate enchanting tables with Hebrew search and bounded custom effects.
+commands:
+  ultraenchant:
+    description: Ultimate enchanting table administration
+    usage: /ultraenchant <give [player]|open|reload|info>
+permissions:
+  ultraenchanting.use:
+    default: true
+  ultraenchanting.craft:
+    default: true
+  ultraenchanting.admin:
+    default: op
